@@ -4,8 +4,8 @@ import dotenv from 'dotenv'
 import router from './routes/routes.js';
 import bodyParser from "body-parser"
 import cors from 'cors'
-
-
+import path from 'path';
+import { dirname } from 'path';
 
 
 
@@ -28,7 +28,10 @@ app.use('/',router);
 app.use(express.json())
 
 
-
+app.get('/',(req,res)=>{
+    app.use(express.static(path.resolve(__dirname,"front-end","dist")));
+    res.sendFile(path.resolve(__dirname,"front-end","dist","index.html"));
+})
 
 app.listen(PORT,()=>console.log("server is running.."));
 
