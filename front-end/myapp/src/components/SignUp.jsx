@@ -25,7 +25,7 @@ const SignUp = () => {
     
     console.log(signUpDetails)
     //fetch data sending details
-    const url = 'http://localhost:8000/signup'
+    const url = `${window.location.origin}/signup`
     const options = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

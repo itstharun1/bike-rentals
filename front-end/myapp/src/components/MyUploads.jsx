@@ -9,7 +9,7 @@ import SideBar from './SideBar';
 function MyUploads() {
   const { id } = useParams();
   //api for fetch the data useing id.
-  let url = `http://localhost:8000/myuploads/${id}`;
+  let url = `${window.location.origin}/myuploads/${id}`;
 
   const [records,setRecords]=useState([]);
 
@@ -33,7 +33,7 @@ function MyUploads() {
  
 
     //upload formData to server
-    const response = await fetch(`http://localhost:8000/delete/${id}`, {
+    const response = await fetch(`${window.location.origin}/delete/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

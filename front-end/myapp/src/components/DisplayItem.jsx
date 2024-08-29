@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 function DisplayItem() {
   const { id } = useParams();
   //api for fetch the data useing id.
-  let url = `http://localhost:8000/items/${id}`;
+  let url = `${window.location.origin}/items/${id}`;
 
   const [records,setRecords]=useState([]);
 

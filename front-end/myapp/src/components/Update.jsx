@@ -32,7 +32,7 @@ console.log(id)
     
 
     //upload formData to server
-    const response = await fetch('http://localhost:8000/uploadBike', {
+    const response = await fetch(`${window.location.origin}/uploadBike`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ console.log(id)
  
 
     //upload formData to server
-    const response = await fetch(`http://localhost:8000/delete/${id}`, {
+    const response = await fetch(`${window.location.origin}/delete/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

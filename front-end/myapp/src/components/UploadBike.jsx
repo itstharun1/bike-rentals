@@ -30,7 +30,7 @@ const BikeRental = () => {
     e.preventDefault();
     console.log(formData)
     //upload formData to server
-    const response = await fetch('http://localhost:8000/uploadBike', {
+    const response = await fetch(`${window.location.origin}/uploadBike`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

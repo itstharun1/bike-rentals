@@ -28,7 +28,7 @@ const Login = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     // authenticate by fetch
-    const url = 'http://localhost:8000/login';
+    const url = `${window.location.origin}/login`;
     const options ={
       method: 'POST',
       headers: {
