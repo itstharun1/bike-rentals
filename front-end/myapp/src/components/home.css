@@ -1,0 +1,87 @@
+.backcolor{
+    background-color: #fff8f8;
+}
+.backcolor2{
+    background-color: #5A5757;
+}
+.nav-items{
+    font-weight: bold;
+}
+.backcolor3{
+    background-color: #beb9b9;
+    margin: 10px;
+    color: white;
+}
+.logo{
+    height: 10vh;
+}
+.tt{
+    height: 100vh;
+}
+
+body{
+    background-color: #f1e4e4;
+    
+}
+
+
+.card2{
+    height: 100vh;
+}
+
+
+.btn1{
+    background-color: #CE59EF;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.btn1:hover{
+    background-color: #55E3EA;
+}
+.up-card{
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.btn2{
+    background-color: #d68deb;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.btn2:hover{
+    background-color: #55E3EA;
+}
+.btn-card1{
+    margin: 10px;
+    color: white;
+}
+.btn-card1:hover{
+    color: #74F334;
+    font-weight: bold;
+}
+
+.update-card{
+    padding: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.update-card1{
+    margin: 15px;
+}
+.update-card2{
+    margin: 15px;
+}
+.uc{
+    padding: 20px;
+}
