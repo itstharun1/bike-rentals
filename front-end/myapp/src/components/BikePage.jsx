@@ -16,7 +16,7 @@ function BikePage() {
    const [records,setRecords]=useState([]);
 
    useEffect(()=>{
-    fetch(`${window.location.origin}/bike`)
+    fetch(`http://localhost:8000/bike`)
     .then(response => response.json())
     .then(data => setRecords(data))
     .catch(e=>console.log(e))
