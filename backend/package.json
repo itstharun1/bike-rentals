@@ -2,12 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "tharun",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

@@ -7,7 +7,7 @@ const LandingPage = () => {
 
 
     const bikePage=()=>{
-        window.location.href="/bike";
+      window.location.href="/bike"
     }
 
 

@@ -19,6 +19,9 @@ const SideBar = () => {
   const uploadB=()=>{
     window.location.href="/uploadBike";
   }
+  const bikes =()=>{
+    window.location.href="/bike";
+  }
 
   return (
     <div className=" bg-blue-600">
@@ -50,6 +53,13 @@ const SideBar = () => {
           </span>
           </li>
           </Link>
+
+          <li onClick={bikes} className="btn-card1">
+          
+          <span className={`${!open && "hidden"} origin-left duration-200`}>
+                All Bikes
+          </span>
+          </li>
           
           
           <li onClick={logout} className="btn-card1">

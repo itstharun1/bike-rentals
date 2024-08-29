@@ -10,6 +10,9 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function BikePage() {
+
+
+
    const [records,setRecords]=useState([]);
 
    useEffect(()=>{
@@ -19,7 +22,7 @@ function BikePage() {
     .catch(e=>console.log(e))
    },[])
     
-  
+  console.log('tharun')
     
    
    
