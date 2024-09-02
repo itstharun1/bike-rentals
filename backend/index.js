@@ -14,6 +14,7 @@ const app = express();
 const PORT = 8000;
 app.use(bodyParser.json());
 app.use(cors());
+
 app.use('/',router);
 
 app.use(express.json())
