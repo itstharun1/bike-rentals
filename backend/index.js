@@ -5,15 +5,21 @@ import router from './routes/routes.js';
 import bodyParser from "body-parser"
 import cors from 'cors'
 
-
+const corsConfig={
+    origin:'*',
+    Credential:true,
+    methods:['GET','POST','PUT','DELETE'],
+}
 
 dotenv.config();
 
 const app = express();
 
+
+
 const PORT = 8000;
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(corsConfig));
 
 app.use('/',router);
 
