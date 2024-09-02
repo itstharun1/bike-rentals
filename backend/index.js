@@ -20,6 +20,7 @@ const app = express();
 const PORT = 8000;
 app.use(bodyParser.json());
 app.use(cors(corsConfig));
+app.options("",cors(corsConfig))
 
 app.use('/',router);
 
