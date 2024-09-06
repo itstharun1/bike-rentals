@@ -17,7 +17,8 @@ const app = express();
 
 
 
-const PORT = 8000;
+// const PORT = 8000;
+const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors(corsConfig));
 app.options("",cors(corsConfig))
@@ -29,7 +30,7 @@ app.use(express.json())
 
 
 
-app.listen(PORT,()=>console.log("server is running.."));
+app.listen(port,()=>console.log("server is running.."));
 
 const username = process.env.db_username
 const password = process.env.db_password
