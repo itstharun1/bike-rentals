@@ -24,7 +24,7 @@ app.use(cors(corsConfig));
 app.options("",cors(corsConfig))
 
 app.get("/",()=>{
-    res.redirect("/bikes")
+    res.redirect("/bike")
 })
 app.use('/',router);
 
