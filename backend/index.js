@@ -23,9 +23,9 @@ app.use(bodyParser.json());
 app.use(cors(corsConfig));
 app.options("",cors(corsConfig))
 
-app.get("/",()=>{
-    res.redirect("/bike")
-})
+// app.get("/",()=>{
+//     res.redirect("/bike")
+// })
 app.use('/',router);
 
 app.use(express.json())
